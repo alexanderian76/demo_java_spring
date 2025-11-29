@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демо Spring приложение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .btn {
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .info {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🚀 Демо Spring приложение</h1>
+
+    <div class="info">
+        <p>Это демонстрационное приложение показывает основные возможности Spring Framework:</p>
+        <ul>
+            <li>Spring Boot Auto-configuration</li>
+            <li>Dependency Injection</li>
+            <li>REST API</li>
+            <li>MVC с Thymeleaf</li>
+            <li>Сервисный слой</li>
+        </ul>
+    </div>
+
+    <div class="menu">
+        <a href="/greeting" class="btn">Приветственная страница</a>
+        <a href="/users" class="btn">Список пользователей</a>
+        <a href="/users/api" class="btn">REST API</a>
+    </div>
+
+    <div>
+        <h3>Доступные endpoints:</h3>
+        <ul>
+            <li><code>GET /</code> - Главная страница</li>
+            <li><code>GET /greeting</code> - Приветственная страница</li>
+            <li><code>GET /users</code> - HTML страница с пользователями</li>
+            <li><code>GET /users/api</code> - REST API всех пользователей</li>
+            <li><code>GET /users/api/{id}</code> - REST API пользователя по ID</li>
+            <li><code>POST /users/api</code> - Создание пользователя</li>
+            <li><code>DELETE /users/api/{id}</code> - Удаление пользователя</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
